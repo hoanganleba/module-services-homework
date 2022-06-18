@@ -1,0 +1,23 @@
+<div class="login-container">
+    <div class="login-form-header">
+        <h1 class="login-title">Login</h1>
+        <p [ngClass]="{'disabled': isLoginValid}" class="login-wrong-e-mail-or-pass">Wrong e-mail or password</p>
+    </div>
+    <div class="login-form-label">
+        <label for="email">Email:</label>
+        <p class="login-required">* required</p>
+    </div>
+    <input [(ngModel)]="email" id="email" name="email" type="text" class="login-form-input"
+        placeholder="Enter e-mail" />
+    <div class="login-form-label">
+        <label for="password">Password:</label>
+        <p class="login-required">* required</p>
+    </div>
+    <input [(ngModel)]="password" id="password" name="password" type="password" class="login-form-input"
+        placeholder="Enter password" />
+    <div class="login-form-footer">
+        <a href="#" class="login-forgot-password">Forgot password?</a>
+        <button [disabled]="email === '' && password === ''" (click)="onSubmit()"
+            [ngClass]="{'login-active-btn': email !== '' && password !== ''}" class="login-btn">Login</button>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+<app-breadcrumb></app-breadcrumb>
+<div class="container">
+    <div class="searchbar-container">
+        <input [(ngModel)]="searchValue" id="search" name="search" type="text" class="searchbar-input"
+            placeholder="Type to search" />
+        <button class="searchbar-btn" (click)="search()">Search</button>
+    </div>
+    <section class="add-course-section">
+        <button class="add-course-button" [routerLink]="['/new-course']">
+            <ion-icon name="add-circle-outline"></ion-icon>
+            <span class="add-course-btn-label">Add course</span>
+        </button>
+    </section>
+    <div class="course-list">
+        <app-course-card *ngFor="let item of filteredData | orderByCreationDate; trackBy: trackByMethod"
+            [title]="item.title" [topRated]="item.topRated" [description]="item.description" [duration]="item.duration"
+            [creationDate]="item.creationDate" [id]="item.id" (delete)="delete($event)">
+        </app-course-card>
+        <app-load-more-button *ngIf="filteredData.length > 0" (click)="loadMoreData()"></app-load-more-button>
+        <app-no-data *ngIf="filteredData.length === 0"></app-no-data>
+    </div>
+</div>

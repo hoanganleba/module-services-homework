@@ -1,0 +1,25 @@
+.footer {
+  background: #303240;
+  height: 60px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  height: 100%;
+  justify-content: flex-end;
+}
+
+.footer-copyright {
+  line-height: 24px;
+  letter-spacing: 0;
+  color: #ffffff;
+  font-size: 12px;
+  text-transform: none;
+  text-align: left;
+}

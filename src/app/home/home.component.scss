@@ -1,0 +1,77 @@
+.container {
+  max-width: 1280px;
+  margin: 20px auto 0 auto;
+}
+
+.add-course-section {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.add-course-button {
+  display: flex;
+  align-items: center;
+  background-color: #009ecc;
+  border-radius: 3px;
+  padding: 8px 12px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.add-course-btn-label {
+  letter-spacing: -0.1px;
+  text-transform: none;
+  text-align: left;
+  margin-left: 8px;
+}
+
+ion-icon {
+  font-size: 20px;
+}
+
+.course-list {
+  margin-top: 40px;
+}
+
+.searchbar-container {
+  display: flex;
+  align-items: center;
+}
+
+.searchbar-input {
+  border-radius: 3px;
+  border: 1px solid #ced0db;
+  background: #ffffff;
+  box-sizing: border-box;
+  border-color: #ced0db;
+  border-width: 1px;
+  border-style: solid;
+  padding: 9px 12px;
+  width: 240px;
+  margin-right: 12px;
+}
+
+.searchbar-input::placeholder {
+  line-height: 18px;
+  letter-spacing: 0;
+  color: #acafbf;
+  font-size: 14px;
+  text-transform: none;
+  text-align: left;
+}
+
+.searchbar-btn {
+  border-radius: 3px;
+  border: none;
+  background: #67a300;
+  color: #ffffff;
+  line-height: 30px;
+  letter-spacing: -0.08px;
+  padding: 3px 17px;
+  font-size: 14px;
+  text-transform: none;
+  text-align: left;
+  font-weight: 600;
+}

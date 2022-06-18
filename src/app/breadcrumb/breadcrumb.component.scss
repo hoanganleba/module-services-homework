@@ -1,0 +1,22 @@
+.breadcrumb {
+  background: #ffffff;
+  height: 64px;
+}
+
+.breadcrumb-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.breadcrumb-link {
+  line-height: 24px;
+  letter-spacing: 0;
+  color: #464a5a;
+  font-size: 14px;
+  text-transform: none;
+  text-align: left;
+  font-weight: 700;
+}

@@ -1,0 +1,15 @@
+<header class="header">
+    <div class="header-container">
+        <div class="header-video-course-logo"  [routerLink]="['/']">Video Course</div>
+        <div class="header-login-section"*appIfAuthenticated="ifAuthenticated">
+            <div class="header-icon-section">
+                <ion-icon name="person"></ion-icon>
+                <div class="header-user-login">User login</div>
+            </div>
+            <div class="header-icon-section">
+                <ion-icon name="exit"></ion-icon>
+                <div class="header-log-out">Log out</div>
+            </div>
+        </div>
+    </div>
+</header>

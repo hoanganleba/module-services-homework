@@ -1,0 +1,28 @@
+<div class="course-card" [appCreationDate]="creationDate">
+    <div class="flex">
+        <div class="course-card-title">{{title | titlecase }}<ion-icon [ngClass]="{'none': !topRated}" class="star"
+                name="star"></ion-icon>
+        </div>
+        <div class="flex">
+            <div class="flex">
+                <ion-icon name="time-outline"></ion-icon>
+                <div class="course-card-duration">{{duration | duration}}</div>
+            </div>
+            <div class="flex ml-12">
+                <ion-icon name="calendar-clear-outline"></ion-icon>
+                <div class="course-card-calendar">{{creationDate| creationDate}}</div>
+            </div>
+        </div>
+    </div>
+    <div class="flex">
+        <p class="course-card-description">{{description}}</p>
+        <div class="flex">
+            <button class="course-card-btn">
+                <ion-icon name="pencil"></ion-icon>Edit
+            </button>
+            <button class="course-card-btn" (click)="deleteData(id)">
+                <ion-icon name="trash"></ion-icon>Delete
+            </button>
+        </div>
+    </div>
+</div>
